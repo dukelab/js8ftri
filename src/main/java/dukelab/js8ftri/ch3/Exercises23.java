@@ -58,8 +58,8 @@ public class Exercises23 {
     @Test
     public void test() throws InterruptedException, ExecutionException {
         Pair<String> pair = new Pair<>("abc", "ef");
-        Pair<Integer> actual = pair.map(String::length);
-        Pair<Integer> expected = new Pair<>(3, 2);
+        Pair<Pair<String>> actual = pair.map(t -> new Pair<>(t + "1", t + "2"));
+        Pair<Pair<String>> expected = new Pair<>(new Pair<>("abc1", "abc2"), new Pair<>("ef1", "ef2"));
 
         Assert.assertEquals(expected, actual);
     }
