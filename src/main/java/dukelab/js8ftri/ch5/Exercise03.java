@@ -8,7 +8,7 @@ import java.util.function.Predicate;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class Exercise3 {
+public class Exercise03 {
 
     @Test
     public void test() {

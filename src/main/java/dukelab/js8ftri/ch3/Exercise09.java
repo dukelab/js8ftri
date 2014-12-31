@@ -3,7 +3,7 @@ package dukelab.js8ftri.ch3;
 import java.lang.reflect.Field;
 import java.util.Comparator;
 
-public class Exercises9 {
+public class Exercise09 {
 
     static class Person {
         final String firstname;

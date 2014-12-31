@@ -11,7 +11,7 @@ import java.util.function.Function;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class Exercises21 {
+public class Exercise21 {
 
     @Test
     public void test() throws InterruptedException, ExecutionException {

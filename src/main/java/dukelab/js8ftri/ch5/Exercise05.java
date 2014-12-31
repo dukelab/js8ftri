@@ -7,7 +7,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 
-public class Exercise5 {
+public class Exercise05 {
 
     @Test
     public void test() {

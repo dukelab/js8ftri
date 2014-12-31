@@ -3,7 +3,7 @@ package dukelab.js8ftri.ch3;
 import java.io.FileInputStream;
 import java.util.function.Function;
 
-public class Exercises18 {
+public class Exercise18 {
 
     public static void main(String[] args) {
         System.out.println(unchecked(t -> t).apply("OK"));

@@ -3,7 +3,7 @@ package dukelab.js8ftri.ch3;
 import java.util.function.BiConsumer;
 import java.util.function.Supplier;
 
-public class Exercises16 {
+public class Exercise16 {
 
     public static void main(String[] args) {
         doInOrderAsync(() -> "hello", (s, t) -> {

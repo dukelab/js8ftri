@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 
 @RunWith(Parameterized.class)
-public class Exercise7 {
+public class Exercise07 {
 
     public static class TimeInterval {
         private final LocalTime from;
@@ -41,7 +41,7 @@ public class Exercise7 {
     private TimeInterval[] tis;
     private boolean expected;
 
-    public Exercise7(TimeInterval[] tis, boolean expected) {
+    public Exercise07(TimeInterval[] tis, boolean expected) {
         this.tis = tis;
         this.expected = expected;
     }

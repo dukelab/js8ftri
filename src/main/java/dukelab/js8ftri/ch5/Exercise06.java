@@ -5,7 +5,7 @@ import java.time.LocalDate;
 
 import org.junit.Test;
 
-public class Exercise6 {
+public class Exercise06 {
 
     @Test
     public void test() {

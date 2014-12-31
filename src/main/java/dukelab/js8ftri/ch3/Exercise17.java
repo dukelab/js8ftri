@@ -2,7 +2,7 @@ package dukelab.js8ftri.ch3;
 
 import java.util.function.Consumer;
 
-public class Exercises17 {
+public class Exercise17 {
 
     public static void main(String[] args) {
         doInParallelAsync(

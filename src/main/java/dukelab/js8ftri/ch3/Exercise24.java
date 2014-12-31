@@ -1,12 +1,12 @@
 package dukelab.js8ftri.ch3;
 
 import java.util.concurrent.ExecutionException;
-import java.util.function.Function;
+import java.util.function.BiFunction;
 
 import org.junit.Assert;
 import org.junit.Test;
 
-public class Exercises23 {
+public class Exercise24 {
 
     public static class Pair<T> {
         private final T first;
@@ -16,10 +16,8 @@ public class Exercises23 {
             this.second = second;
         }
 
-        // argument type => ? super T
-        // return type => ? extends T
-        public <U> Pair<U> map(Function<? super T, ? extends U> mapper) {
-            return new Pair<>(mapper.apply(first), mapper.apply(second));
+        public <U> Pair<U> flatMap(BiFunction<? super T, ? super T, Pair<U>> mapper) {
+            return mapper.apply(first, second);
         }
 
         @Override
@@ -58,8 +56,8 @@ public class Exercises23 {
     @Test
     public void test() throws InterruptedException, ExecutionException {
         Pair<String> pair = new Pair<>("abc", "ef");
-        Pair<Pair<String>> actual = pair.map(t -> new Pair<>(t + "1", t + "2"));
-        Pair<Pair<String>> expected = new Pair<>(new Pair<>("abc1", "abc2"), new Pair<>("ef1", "ef2"));
+        Pair<Integer> actual = pair.flatMap((f, s) -> new Pair<>(f.length(), s.length()));
+        Pair<Integer> expected = new Pair<>(3, 2);
 
         Assert.assertEquals(expected, actual);
     }

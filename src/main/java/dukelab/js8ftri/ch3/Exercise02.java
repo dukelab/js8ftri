@@ -3,7 +3,7 @@ package dukelab.js8ftri.ch3;
 import java.util.concurrent.locks.ReentrantLock;
 
 //
-public class Exercises2 {
+public class Exercise02 {
 
     public static void main(String[] args) {
         withLock(new ReentrantLock(), () -> { System.out.println("Hi, baby"); });

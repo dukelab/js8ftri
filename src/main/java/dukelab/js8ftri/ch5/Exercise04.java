@@ -10,7 +10,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 
-public class Exercise4 {
+public class Exercise04 {
 
     /**
      * JUnit version

@@ -9,7 +9,7 @@ import java.util.logging.Level;
 import java.util.logging.LogManager;
 import java.util.logging.Logger;
 
-public class Exercises1 {
+public class Exercise01 {
 
     private static final Logger logger = Logger.getLogger(MethodHandles.lookup().lookupClass().getPackage().getName());
 

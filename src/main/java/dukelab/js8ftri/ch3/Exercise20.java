@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class Exercises20 {
+public class Exercise20 {
 
     @Test
     public void test() {

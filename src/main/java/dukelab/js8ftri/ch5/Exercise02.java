@@ -5,7 +5,7 @@ import java.time.LocalDate;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class Exercise2 {
+public class Exercise02 {
 
     @Test
     public void testOneYear() {
