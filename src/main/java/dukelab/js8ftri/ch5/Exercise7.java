@@ -26,11 +26,11 @@ public class Exercise7 {
                     to.compareTo(other.from) < 0) {
                 return false;
             }
-            if (from.compareTo(other.from) <= 0 &&
+            if (from.compareTo(other.from) <= 0 ||
                     to.compareTo(other.to) >= 0) {
                 return true;
             }
-            if (from.compareTo(other.from) >= 0 &&
+            if (from.compareTo(other.from) >= 0 ||
                     to.compareTo(other.to) <= 0) {
                 return true;
             }
@@ -50,33 +50,59 @@ public class Exercise7 {
     public static Collection<Object[]> primeNumbers() {
        return Arrays.asList(new Object[][] {
           {
+              //    -------------------------
+              // ---------------------------------
               new TimeInterval[] {
                   new TimeInterval(LocalTime.of(10, 00), LocalTime.of(11, 00)),
                   new TimeInterval(LocalTime.of(9, 00), LocalTime.of(12, 00))
               }, true
           },
           {
+              // ---------------------------------
+              //     -------------------------
               new TimeInterval[] {
                   new TimeInterval(LocalTime.of(9, 00), LocalTime.of(12, 00)),
                   new TimeInterval(LocalTime.of(10, 00), LocalTime.of(11, 00))
               }, true
           },
           {
+              // -------------------------
+              // -------------------------
               new TimeInterval[] {
                   new TimeInterval(LocalTime.of(10, 00), LocalTime.of(13, 00)),
                   new TimeInterval(LocalTime.of(10, 00), LocalTime.of(13, 00))
               }, true
           },
           {
+              // -------------------------
+              //                 -------------------------
+              new TimeInterval[] {
+                  new TimeInterval(LocalTime.of(10, 00), LocalTime.of(13, 00)),
+                  new TimeInterval(LocalTime.of(12, 00), LocalTime.of(14, 00))
+              }, true
+          },
+          {
+              //                 -------------------------
+              // -------------------------
+              new TimeInterval[] {
+                      new TimeInterval(LocalTime.of(12, 00), LocalTime.of(14, 00)),
+                      new TimeInterval(LocalTime.of(10, 00), LocalTime.of(13, 00))
+              }, true
+          },
+          {
+              //              ----------------
+              // -----------
               new TimeInterval[] {
                   new TimeInterval(LocalTime.of(12, 00), LocalTime.of(13, 00)),
                   new TimeInterval(LocalTime.of(10, 00), LocalTime.of(11, 00))
               }, false
           },
           {
+              // --------------
+              //                 ----------------
               new TimeInterval[] {
-                  new TimeInterval(LocalTime.of(12, 00), LocalTime.of(13, 00)),
-                  new TimeInterval(LocalTime.of(10, 00), LocalTime.of(11, 00))
+                  new TimeInterval(LocalTime.of(10, 00), LocalTime.of(11, 00)),
+                  new TimeInterval(LocalTime.of(12, 00), LocalTime.of(13, 00))
               }, false
           }
        });
