@@ -9,7 +9,7 @@ import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.commons.lang3.RandomUtils;
 import org.junit.Test;
 
-public class Exercise1 {
+public class Exercise01 {
 
     @Test
     public void test() throws InterruptedException {
